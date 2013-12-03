@@ -1,0 +1,233 @@
+@charset "utf-8"
+
+header-background()
+  background-color: rgba(245, 245, 245, 0.7)
+
+header-position()
+  position: fixed
+  z-index: 10
+  top: 0%
+  margin: 3px auto 30px 5px
+  width: 100%
+
+footer-background()
+  background-color: rgba(245, 245, 245, 0.7)
+
+footer-position()
+  width: 100%
+  z-index: 10
+  margin: 10px auto 0px auto
+  padding-left: 20px
+  position: fixed
+  bottom: 0%
+
+line-bottom(op1=.2, op2=.3)
+  border-bottom: 1px solid rgba(0, 0, 0, op1);
+  -o-box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
+  -ms-box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
+  -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
+  -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
+
+border-radius(n)
+  -o-border-radius: n
+  -ms-border-radius: n
+  -moz-border-radius: n
+  -webkit-border-radius: n
+  border-radius: n
+
+box-shadow(w_offset, h_offset, blur, len, color=rgba(0,0,0,0.3))
+  -o-box-shadow: w_offset h_offset blur len color
+  -ms-box-shadow: w_offset h_offset blur len color
+  -moz-box-shadow: w_offset h_offset blur len color
+  -webkit-box-shadow: w_offset h_offset blur len color
+  box-shadow: w_offset h_offset blur len color
+
+full-width = 960px
+sidebar-width = 260px
+document-width = 85
+article-width = 90%
+main-color = #444
+main-font-size = 17px
+
+black =     #002b36
+yellow =    #b58900
+orange =    #cb4b16
+red =       #dc322f
+magenta =   #d33682
+violet =    #6c71c4
+blue =      #268bd2
+cyan =      #2aa198
+green =     #859900
+
+
+html, body
+  overflow: visible
+  font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック","Meiryo","メイリオ",sans-serif
+  font-size: main-font-size
+  color: main-color
+  background-color: #FEFEFE
+  font-weight: lighter
+  width: 100%
+  height: 100%
+  margin: 0 auto
+
+h1, h2, h3, h4, h5
+  font-weight: lighter
+
+h1
+  font-size: 36px
+
+h1, h2
+  margin: 25px auto 0 auto
+  line-bottom(.1)
+
+h3, h4, h5
+  margin: 15px auto 0 auto
+
+ul
+  padding: 0
+  margin: 20px auto 0 15px
+
+li ul
+  margin: 5px auto 0 15px
+
+li
+  margin: 5px auto
+
+a
+  color: #009FC7
+  &:hover
+    color: #427daf
+    text-decoration: none
+  &:visited
+    color: #BE4A94
+
+
+input[type="text"]
+  box-shadow(0.1px, 0.15px, 1px, .5px)
+  border-style: none
+
+input[type="submit"]
+  border-radius(3)
+  box-shadow(0.1px, 0.15px, 1px, .5px)
+
+  display: inline-block
+  color: #FEFEFE
+  padding: 6px 10px 2px 10px
+  background-color: #27B9D4
+  font-weight: normal
+  letter-spacing: 0.09em
+  border-style: none
+  text-shadow: 1px 1px 0px #6682CA
+
+
+p.topless
+  padding: 0 auto
+  margin: 0 auto
+
+header
+  header-background()
+  header-position()
+  .relative
+    padding-right: 50px
+  ul
+    padding: 0
+    margin: 0
+  li
+    display: inline
+
+.breadcrumb
+  li
+    display: inline-block
+    list-style: none
+
+.pre
+  font-size: (main-font-size - 2px)
+  background-color: #fdf6e3
+
+.documentwrapper
+  overflow: visible
+  background-color: #FEFEFE
+  //width: full-width
+  height: 100%
+  margin: 0 auto
+
+
+.document
+  background-color: #FEFEFE
+  margin: 0 auto 0 sidebar-width
+  padding-top: 40px
+  padding-bottom: 100px
+  //width: (document-width)%
+  width: full-width - sidebar-width
+
+
+.sidebarwrapper
+  position: fixed
+  z-index: 1
+  background-color: #F5F5F5
+  margin: 0 auto
+  padding-top: 50px
+  width: sidebar-width
+  min-width: sidebar-width
+  height: 100%
+
+  -o-box-shadow: .4px 1px 1px rgba(0,0,0,0.3)
+  -ms-box-shadow: .4px 1px 1px rgba(0,0,0,0.3)
+  -moz-box-shadow: .4px 1px 1px rgba(0,0,0,0.3)
+  -webkit-box-shadow: .4px 1px 1px rgba(0,0,0,0.3)
+  box-shadow: .4px 1px 1px rgba(0,0,0,0.3)
+
+
+.sidebar
+  margin: 0 auto 0 10px
+  height: 100%
+  font-size: 95%
+  .relative
+    margin: 60px auto
+
+nav.localtoc
+  ul
+    margin-left: 0
+  li
+    padding-left: 0
+    list-style: none
+    ul
+      margin-left: 15px
+      li
+        list-style: square
+
+#searchbox
+  margin: 50px auto
+
+
+.bodywrapper
+  width: article-width
+  margin: 0 auto
+
+.headerlink
+  text-decoration: none
+  margin-left: 10px
+  color: main-color
+
+
+footer
+  footer-background()
+  footer-position()
+  p
+    display: inline-block
+  li
+    display: inline-block
+    list-style: none
+
+
+
+.left
+  float: left
+
+.right
+  float: right
+
+.clearer
+  clear: both
