@@ -1,1 +1,2 @@
-recursive-include themes *
+include *.txt *.rst *.md *.cfg
+recursive-include src/hachibee_sphinx_theme *
