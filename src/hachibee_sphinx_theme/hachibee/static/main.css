@@ -50,6 +50,9 @@ li ul {
 li {
   margin: 5px auto;
 }
+li dl dd {
+  margin: 0;
+}
 a {
   color: #009fc7;
 }
