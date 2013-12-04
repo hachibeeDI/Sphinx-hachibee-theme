@@ -152,7 +152,6 @@ header li {
   width: 700px;
 }
 .sidebarwrapper {
-  overflow: scroll;
   float: left;
   margin: 0 auto;
   padding-top: 50px;
