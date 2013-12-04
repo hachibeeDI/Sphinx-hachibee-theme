@@ -11,7 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   src/list
+   src/elements
    src/directive
 
 
