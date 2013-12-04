@@ -1,6 +1,6 @@
 my simple sphinx theme
 
-.. code-block:: python
+```python
     extensions = [
         'sphinx.ext.intersphinx',
         'sphinx.ext.pngmath',
@@ -12,3 +12,4 @@ my simple sphinx theme
     # Add any paths that contain custom themes here, relative to this directory.
     import hachibee_sphinx_theme
     html_theme_path = [hachibee_sphinx_theme.get_html_themes_path()]
+```
