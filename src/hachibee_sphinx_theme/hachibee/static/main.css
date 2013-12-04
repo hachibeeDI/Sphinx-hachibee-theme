@@ -4,12 +4,17 @@ body {
   overflow: visible;
   font-family: "游ゴシック", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", "Meiryo", "メイリオ", sans-serif;
   font-size: 17px;
-  color: #444;
+  color: #002b36;
   background-color: #fefefe;
   font-weight: lighter;
-  width: 100%;
   height: 100%;
-  margin: 0 auto;
+}
+div.content {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  margin: 0 auto 80px;
 }
 h1,
 h2,
@@ -24,7 +29,7 @@ h1 {
 h1,
 h2 {
   margin: 25px auto 0 auto;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
   -o-box-shadow: 0px 1px 0px rgba(255,255,255,0.3);
   -ms-box-shadow: 0px 1px 0px rgba(255,255,255,0.3);
   -moz-box-shadow: 0px 1px 0px rgba(255,255,255,0.3);
@@ -39,6 +44,16 @@ h3,
 h4,
 h5 {
   margin: 15px auto 0 auto;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  -o-box-shadow: 0px 1px 0px rgba(255,255,255,0.2);
+  -ms-box-shadow: 0px 1px 0px rgba(255,255,255,0.2);
+  -moz-box-shadow: 0px 1px 0px rgba(255,255,255,0.2);
+  -webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.2);
+  -o-box-shadow: 0px 1px 0px rgba(255,255,255,0.2) rgba(0,0,0,0.3);
+  -ms-box-shadow: 0px 1px 0px rgba(255,255,255,0.2) rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 0px rgba(255,255,255,0.2) rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.2) rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.2) rgba(0,0,0,0.3);
 }
 ul {
   padding: 0;
@@ -122,41 +137,33 @@ header li {
   background-color: #fdf6e3;
 }
 .documentwrapper {
-  overflow: visible;
   background-color: #fefefe;
-  height: 100%;
+  width: 960px;
+  height: auto;
+  min-height: 100%;
   margin: 0 auto;
 }
 .document {
+  overflow: hidden;
   background-color: #fefefe;
-  margin: 0 auto 0 260px;
+  margin: 0 auto;
   padding-top: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   width: 700px;
 }
 .sidebarwrapper {
-  position: fixed;
-  z-index: 1;
-  background-color: #f5f5f5;
+  overflow: scroll;
+  float: left;
   margin: 0 auto;
   padding-top: 50px;
   width: 260px;
   min-width: 260px;
   height: 100%;
-  -o-box-shadow: 0.4px 1px 1px rgba(0,0,0,0.3);
-  -ms-box-shadow: 0.4px 1px 1px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0.4px 1px 1px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0.4px 1px 1px rgba(0,0,0,0.3);
-  -o-box-shadow: 0.4px 1px 1px rgba(0,0,0,0.3) rgba(0,0,0,0.3);
-  -ms-box-shadow: 0.4px 1px 1px rgba(0,0,0,0.3) rgba(0,0,0,0.3);
-  -moz-box-shadow: 0.4px 1px 1px rgba(0,0,0,0.3) rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0.4px 1px 1px rgba(0,0,0,0.3) rgba(0,0,0,0.3);
-  box-shadow: 0.4px 1px 1px rgba(0,0,0,0.3) rgba(0,0,0,0.3);
 }
 .sidebar {
-  margin: 0 auto 0 10px;
-  height: 100%;
-  font-size: 95%;
+  margin: 0 auto;
+  width: 90%;
+  font-size: 90%;
 }
 .sidebar .relative {
   margin: 60px auto;
@@ -177,7 +184,7 @@ nav.localtoc li ul li {
 #searchbox {
   margin: 50px auto;
 }
-.bodywrapper {
+.body {
   width: 90%;
   margin: 0 auto;
 }
@@ -188,12 +195,13 @@ nav.localtoc li ul li {
 }
 footer {
   background-color: rgba(245,245,245,0.7);
+  position: absolute;
+  clear: both;
+  bottom: 0;
   width: 100%;
-  z-index: 10;
-  margin: 10px auto 0px auto;
+  margin: auto;
   padding-left: 20px;
-  position: fixed;
-  bottom: 0%;
+  height: 80px;
 }
 footer p {
   display: inline-block;
@@ -204,6 +212,7 @@ footer li {
 }
 .admonition {
   margin: 20px auto;
+  padding-bottom: 5px;
   -o-box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
   -ms-box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
   -moz-box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);

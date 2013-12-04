@@ -126,6 +126,7 @@
         {%- endif %}
     </head>
     <body>
+    <div class="content">
         {%- block header %}
         <header>
             <div class="left">
@@ -134,36 +135,32 @@
             <div class="right">
                 {{ relbar() }}
             </div>
+            <div class="clearer"></div>
         </header>
         {% endblock %}
 
+        <div class="documentwrapper">
         {%- block content %}
-            {%- block sidebar1 %} {# possible location for sidebar #} {% endblock %}
-            <div class="documentwrapper">
-                {%- block sidebar %}{{ sidebar() }}{% endblock %}
+            {%- block sidebar %}{{ sidebar() }}{% endblock %}
 
-                {%- block document %}
-                <div class="document">
-                  {%- if render_sidebar %}
-                    <div class="bodywrapper">
-                  {%- endif %}
-                      <div class="body">
-                        {% block body %} {% endblock %}
-                      </div>
-                  {%- if render_sidebar %}
-                    </div>
-                  {%- endif %}
-                </div> <!-- document -->
-          {%- endblock %}
-
-            </div> <!-- documentwrapper -->
-            <div class="clearer"></div>
+            {%- block document %}
+            <div class="document">
+                <div class="body">
+                    {% block body %} {% endblock %}
+                </div>
+                {%- if render_sidebar %}
+                {%- endif %}
+            </div> <!-- document -->
         {%- endblock %}
+
+
+        </div> <!-- documentwrapper -->
+        {%- endblock %}{#- content block #}
 
         {%- block footer %}
         <footer>
             {%- if show_copyright %}
-            <p class="left">
+            <p>
               {%- if hasdoc('copyright') %}
                 {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
               {%- else %}
@@ -183,6 +180,7 @@
             {%- endif %}
         </footer>
         {%- endblock footer %}
+    </div>
     </body>
 </html>
 
