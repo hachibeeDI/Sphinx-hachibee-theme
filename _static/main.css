@@ -1,7 +1,6 @@
 @charset "utf-8";
 html,
 body {
-  overflow: visible;
   font-family: "游ゴシック", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", "Meiryo", "メイリオ", sans-serif;
   font-size: 17px;
   color: #002b36;
@@ -24,11 +23,11 @@ h5 {
   font-weight: lighter;
 }
 h1 {
-  font-size: 36px;
+  font-size: 35px;
 }
 h1,
 h2 {
-  margin: 25px auto 0 auto;
+  margin: 25px auto 10px auto;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   -o-box-shadow: 0px 1px 0px rgba(255,255,255,0.3);
   -ms-box-shadow: 0px 1px 0px rgba(255,255,255,0.3);
@@ -43,7 +42,7 @@ h2 {
 h3,
 h4,
 h5 {
-  margin: 15px auto 0 auto;
+  margin: 15px auto 8px auto;
   border-bottom: 1px solid rgba(0,0,0,0.1);
   -o-box-shadow: 0px 1px 0px rgba(255,255,255,0.2);
   -ms-box-shadow: 0px 1px 0px rgba(255,255,255,0.2);
@@ -70,10 +69,11 @@ li dl dd {
 }
 a {
   color: #009fc7;
+  text-decoration: none;
 }
 a:hover {
   color: #427daf;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:visited {
   color: #be4a94;
@@ -133,7 +133,7 @@ header li {
   list-style: none;
 }
 .pre {
-  font-size: 15px;
+  font-size: 16px;
   background-color: #fdf6e3;
 }
 .documentwrapper {
@@ -152,7 +152,6 @@ header li {
   width: 700px;
 }
 .sidebarwrapper {
-  overflow: scroll;
   float: left;
   margin: 0 auto;
   padding-top: 50px;
@@ -191,7 +190,11 @@ nav.localtoc li ul li {
 .headerlink {
   text-decoration: none;
   margin-left: 10px;
-  color: #444;
+  color: #32a1bd;
+  font-size: 75%;
+}
+.headerlink:visited {
+  color: #32a1bd;
 }
 footer {
   background-color: rgba(245,245,245,0.7);
@@ -200,18 +203,20 @@ footer {
   bottom: 0;
   width: 100%;
   margin: auto;
-  padding-left: 20px;
   height: 80px;
 }
 footer p {
   display: inline-block;
+  margin: auto;
+  padding-left: 15px;
+  line-height: 80px;
 }
 footer li {
   display: inline-block;
   list-style: none;
 }
 .admonition {
-  margin: 20px auto;
+  margin: 30px auto;
   padding-bottom: 5px;
   -o-box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
   -ms-box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
@@ -279,4 +284,49 @@ footer li {
 }
 .clearer {
   clear: both;
+}
+table {
+  margin: 20px 0;
+  border: 0px solid rgba(243,243,243,0.15);
+  border-right-color: rgba(189,236,255,0.4);
+  border-spacing: 1px;
+  -o-box-shadow: 0.1px 0.15px 0px 0px rgba(0,0,0,0.3);
+  -ms-box-shadow: 0.1px 0.15px 0px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0.1px 0.15px 0px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0.1px 0.15px 0px 0px rgba(0,0,0,0.3);
+  box-shadow: 0.1px 0.15px 0px 0px rgba(0,0,0,0.3);
+}
+table caption {
+  font-size: 18px;
+  line-height: 37px;
+}
+table thead {
+  color: #fff;
+  letter-spacing: 0.25em;
+  text-shadow: 0.5px 0.9px 0px #2d86cc;
+}
+table thead .row-odd {
+  background-color: #52b5ce;
+}
+table thead th {
+  font-weight: normal;
+  font-size: 18px;
+}
+table tr {
+  height: 42px;
+}
+table td {
+  -o-box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
+  -ms-box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
+  box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
+  padding: 0 5px;
+  vertical-align: middle;
+}
+table .row-even {
+  background-color: #f7f7f7;
+}
+table .row-odd {
+  background-color: #fefefe;
 }
