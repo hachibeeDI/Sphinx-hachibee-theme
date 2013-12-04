@@ -74,7 +74,6 @@ green =      #859900
 
 
 html, body
-  overflow: visible
   font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック","Meiryo","メイリオ",sans-serif
   font-size: main-font-size
   color: black
@@ -167,7 +166,7 @@ header
     list-style: none
 
 .pre
-  font-size: (main-font-size - 2px)
+  font-size: (main-font-size - 1px)
   background-color: light-yellow
 
 .documentwrapper
@@ -237,13 +236,16 @@ footer
   height: footer-height
   p
     display: inline-block
+    margin: auto
+    padding-left: 15px
+    line-height: footer-height
   li
     display: inline-block
     list-style: none
 
 // TipとかNoteとかのベースになるやつ
 .admonition
-  margin: 20px auto
+  margin: 30px auto
   padding-bottom: 5px
   box-shadow(0.1px, 0.15px, 1px, .5px)
   background-color: #F7F7F7
