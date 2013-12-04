@@ -1,6 +1,19 @@
-my simple sphinx theme
+# my simple sphinx theme
 
-```python
+## Sample Page
+
+http://hachibeedi.github.io/Sphinx-hachibee-theme/index.html
+
+
+## how to use
+
+```bash
+pip install hachibee-sphinx-theme
+```
+
+change `conf.py` in your sphinx source directory
+
+```python:conf.py
     extensions = [
         'sphinx.ext.intersphinx',
         'sphinx.ext.pngmath',
