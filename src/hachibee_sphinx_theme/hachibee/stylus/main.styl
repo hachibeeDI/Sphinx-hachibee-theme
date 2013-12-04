@@ -43,6 +43,15 @@ box-shadow(w_offset, h_offset, blur, len, color=rgba(0,0,0,0.3))
   -webkit-box-shadow: w_offset h_offset blur len color
   box-shadow: w_offset h_offset blur len color
 
+directive-font-style(color=#FEFEFE, shadow-color=#989DD6)
+  font-weight: normal
+  letter-spacing: 0.09em
+  font-size: main-font-size + 1px
+  border-style: none
+  color: color
+  text-shadow: 1px 1px 0px shadow-color
+
+
 full-width = 960px
 sidebar-width = 260px
 document-width = 85
@@ -50,15 +59,18 @@ article-width = 90%
 main-color = #444
 main-font-size = 17px
 
-black =     #002b36
-yellow =    #b58900
-orange =    #cb4b16
-red =       #dc322f
-magenta =   #d33682
-violet =    #6c71c4
-blue =      #268bd2
-cyan =      #2aa198
-green =     #859900
+base-white = #FEFEFE
+black =      #002b36
+light-yellow = #fdf6e3
+yellow =     #C4B400
+orange =     #F54E00
+red =        #dc322f
+magenta =    #d33682
+violet =     #A01CB3 //#6c71c4
+light-blue = #009FC7
+blue =       #268bd2
+cyan =       #2aa198
+green =      #859900
 
 
 html, body
@@ -66,7 +78,7 @@ html, body
   font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック","Meiryo","メイリオ",sans-serif
   font-size: main-font-size
   color: main-color
-  background-color: #FEFEFE
+  background-color: base-white
   font-weight: lighter
   width: 100%
   height: 100%
@@ -113,7 +125,7 @@ input[type="submit"]
   box-shadow(0.1px, 0.15px, 1px, .5px)
 
   display: inline-block
-  color: #FEFEFE
+  color: base-white
   padding: 6px 10px 2px 10px
   background-color: #27B9D4
   font-weight: normal
@@ -144,18 +156,18 @@ header
 
 .pre
   font-size: (main-font-size - 2px)
-  background-color: #fdf6e3
+  background-color: light-yellow
 
 .documentwrapper
   overflow: visible
-  background-color: #FEFEFE
+  background-color: base-white
   //width: full-width
   height: 100%
   margin: 0 auto
 
 
 .document
-  background-color: #FEFEFE
+  background-color: base-white
   margin: 0 auto 0 sidebar-width
   padding-top: 40px
   padding-bottom: 100px
@@ -221,6 +233,55 @@ footer
     display: inline-block
     list-style: none
 
+// TipとかNoteとかのベースになるやつ
+.admonition
+  margin: 20px auto
+  box-shadow(0.1px, 0.15px, 1px, .5px)
+  background-color: #F7F7F7
+  p, ul
+    padding-left: 20px
+
+.admonition-title
+  line-bottom()
+  padding-left: 15px
+  directive-font-style()
+  background-color: light-blue  // default color
+
+.attention
+  .admonition-title
+    background-color: orange
+
+.caution
+  .admonition-title
+    background-color: violet
+
+.danger
+  .admonition-title
+    background-color: red
+
+.error
+  .admonition-title
+    background-color: red
+
+.hint
+  .admonition-title
+    background-color: yellow
+
+.important
+  .admonition-title
+    background-color: magenta
+
+.note
+  .admonition-title
+    background-color: light-blue
+
+.tip
+  .admonition-title
+    background-color: cyan
+
+.warning
+  .admonition-title
+    background-color: red
 
 
 .left
