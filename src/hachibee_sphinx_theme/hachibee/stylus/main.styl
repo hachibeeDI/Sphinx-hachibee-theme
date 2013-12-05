@@ -310,6 +310,9 @@ footer
   clear: both
 
 
+th, td
+  border: 0px solid rgba(243, 243, 243, 0.15)
+
 table
   margin: 20px 0
   border: 0px solid rgba(243, 243, 243, 0.15)
@@ -319,6 +322,7 @@ table
   border-spacing: 1px
   box-shadow(.1px, 0.15px, 0px, 0px)
   caption
+    text-align: center
     font-size: main-font-size + 1px
     line-height: main-font-size + 20px
   thead
@@ -328,6 +332,8 @@ table
     .row-odd
       background-color: #52B5CE
     th
+      border: 2px solid rgba(243, 243, 243, 0.2)
+      text-align: center
       font-weight: normal
       font-size: main-font-size + 1px
   tbody
@@ -335,9 +341,8 @@ table
   tr
     height: main-font-size + 25px
   td
-    box-shadow(0.1px, 0.15px, 1px, .5px)
+    box-shadow(0.1px, 0.15px, 1px, 0px)
     padding: 0 5px
-    vertical-align: middle
   .row-even
     background-color: #F7F7F7
   .row-odd
