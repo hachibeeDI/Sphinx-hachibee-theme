@@ -1,14 +1,16 @@
 @charset "utf-8"
+@import "reset"
 
 header-background()
-  background-color: rgba(245, 245, 245, 0.7)
+  background-color: #F1F1F1
 
 header-position()
   position: fixed
   z-index: 10
   top: 0%
-  margin: 3px auto 30px 5px
+  margin: auto
   width: 100%
+  height: main-font-size + 20px
 
 footer-background()
   background-color: rgba(245, 245, 245, 0.7)
@@ -153,13 +155,16 @@ p.topless
 header
   header-background()
   header-position()
-  .relative
-    padding-right: 50px
+  .right
+    margin-right: 20px
+  .left
+    margin-left: 20px
   ul
     padding: 0
-    margin: 0
+    margin: auto
   li
-    display: inline
+    display: inline-block
+    vertical-align: middle
 
 .breadcrumb
   li
