@@ -1,0 +1,88 @@
+
+================================
+Header1
+================================
+
+Header2
+================================
+
+Header3
+------------
+
+Header4
+^^^^^^^^^^^
+
+Header5
+###########
+
+
+List
+================================
+
+ul
+---------
+
+- this
+  this is list section
+
+- is
+
+  - nested
+
+  - list
+
+    this is nested section
+
+- list
+
+  this is list section
+
+
+ol
+---------
+
+#. this
+#. is
+
+   #. nested
+   #. ol
+
+      this is nested ol
+
+#. list
+
+   this is list section
+
+
+Decoration
+==============
+
+*italic*
+
+**strong**
+
+``pre``
+
+
+Table
+=========
+
+.. table:: eg
+
+   =====  =====  =======
+   A      B      A and B
+   =====  =====  =======
+   False  False  False
+   True   False  False
+   False  True   False
+   True   True   True
+   =====  =====  =======
+
+
+.. csv-table:: Frozen Delights!
+   :header: "Treat", "Quantity", "Description"
+
+   "Albatross", 2.99, "On a stick!"
+   "Crunchy Frog", 1.49, "If we took the bones out, it wouldn't be
+   crunchy, now would it?"
+   "Gannet Ripple", 1.99, "On a stick!"
