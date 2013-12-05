@@ -4,6 +4,10 @@
 
 http://hachibeedi.github.io/Sphinx-hachibee-theme/index.html
 
+### ScreenShot
+
+![shot](https://raw.github.com/hachibeeDI/Sphinx-hachibee-theme/master/example/screenshot.png)
+
 
 ## how to use
 
