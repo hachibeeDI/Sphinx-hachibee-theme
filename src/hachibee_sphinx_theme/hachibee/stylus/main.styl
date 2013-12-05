@@ -58,6 +58,7 @@ sidebar-width = 260px
 article-width = 90%
 footer-height = 80px
 main-font-size = 17px
+padding-from-header = 60px
 
 base-white = #FEFEFE
 black =      #002b36
@@ -185,10 +186,9 @@ header
 .document
   overflow: hidden
   background-color: base-white
-  margin: 0 auto
-  padding-top: 40px
-  padding-bottom: 80px
-  //width: (document-width)%
+  margin: 0 0 0 auto
+  padding-top: padding-from-header
+  padding-bottom: footer-height + 20px
   width: full-width - sidebar-width
 
 
@@ -196,14 +196,14 @@ header
   float: left
   //background-color: #F5F5F5
   margin: 0 auto
-  padding-top: 50px
+  padding-top: padding-from-header
   width: sidebar-width
   min-width: sidebar-width
   height: 100%
 
 
 .sidebar
-  margin: 0 auto
+  margin: 0 auto 0 0  // 一番左に
   width: 90%
   font-size: 90%
   .relative
@@ -231,7 +231,7 @@ nav.localtoc
 
 .body
   width: article-width
-  margin: 0 auto
+  margin: 0 0 0 auto
 
 
 .headerlink
