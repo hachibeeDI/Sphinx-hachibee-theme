@@ -57,6 +57,8 @@ ol
 Decoration
 ==============
 
+This is plain sentence
+
 *italic*
 
 **strong**
