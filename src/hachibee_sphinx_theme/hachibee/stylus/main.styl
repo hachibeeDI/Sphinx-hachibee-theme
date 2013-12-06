@@ -54,7 +54,7 @@ directive-font-style(color=#FEFEFE, shadow-color=#989DD6)
 
 
 full-width = 980px
-sidebar-width = 260px
+sidebar-width = 270px
 article-width = 90%
 footer-height = 80px
 main-font-size = 17px
@@ -184,27 +184,29 @@ header
 
 
 .document
+  //float: left
   overflow: hidden
   background-color: base-white
-  margin: 0 0 0 auto
+  margin-right: auto
   padding-top: padding-from-header
   padding-bottom: footer-height + 20px
   width: full-width - sidebar-width
 
 
 .sidebarwrapper
-  float: left
+  float: right
   //background-color: #F5F5F5
   margin: 0 auto
-  padding-top: padding-from-header
+  //padding-top: padding-from-header
   width: sidebar-width
   min-width: sidebar-width
   height: 100%
 
 
 .sidebar
-  margin: 0 auto 0 0  // 一番左に
-  width: 90%
+  margin-top: padding-from-header * 3
+  margin-left: auto
+  width: 85%
   font-size: 90%
   .relative
     margin: 60px auto
@@ -231,7 +233,7 @@ nav.localtoc
 
 .body
   width: article-width
-  margin: 0 0 0 auto
+  margin-right: auto
 
 
 .headerlink
