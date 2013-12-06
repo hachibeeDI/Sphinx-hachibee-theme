@@ -96,7 +96,15 @@ li ul {
   margin: 5px auto 0 15px;
 }
 li {
+  word-wrap: break-word;
   margin: 5px auto;
+}
+li p {
+  margin-top: 0;
+}
+li p.first {
+  margin-top: 0.8em;
+  margin-bottom: 0.2em;
 }
 li dl dd {
   margin: 0;
