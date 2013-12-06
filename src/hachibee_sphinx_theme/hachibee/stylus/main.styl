@@ -122,7 +122,14 @@ li ul
   margin: 5px auto 0 15px
 
 li
+  // list内のparagraphのコンテンツがはみ出るのに対応
+  word-wrap: break-word
   margin: 5px auto
+  p
+    margin-top: 0
+    &.first
+      margin-top: 0.8em
+      margin-bottom: 0.2em
   dl
     dt
       // リストのタイトル部分
