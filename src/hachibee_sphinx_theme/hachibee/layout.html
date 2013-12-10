@@ -51,6 +51,15 @@
     {%- if render_sidebar %}
         <div class="sidebarwrapper">
             <div class="sidebar">
+            {%- block sidebarlogo %}
+                {%- if logo %}
+                    <p class="logo"><a href="{{ pathto(master_doc) }}">
+                    <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+                    </a></p>
+                {%- else %}
+                    <h3><a href="{{ pathto(master_doc) }}">{{ _('Top') }}</a></h3>
+                {%- endif %}
+            {%- endblock %}
             {%- if sidebars != None %}
                 {#- new style sidebar: explicitly include/exclude templates #}
                 {%- for sidebartemplate in sidebars %}
@@ -59,7 +68,6 @@
             {%- else %}
                 {#- old style sidebars: using blocks -- should be deprecated #}
                 {%- block sidebartoc %}
-                    <h3><a href="{{ pathto(master_doc) }}">{{ _('Top') }}</a></h3>
                     {%- include "localtoc.html" %}
                 {%- endblock %}
                 {%- block sidebarrel %}
