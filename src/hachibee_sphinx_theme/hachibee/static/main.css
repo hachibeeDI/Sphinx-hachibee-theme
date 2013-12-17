@@ -61,6 +61,7 @@ h3,
 h4,
 h5 {
   margin: 15px auto 8px auto;
+  color: #0b691e;
   border-bottom: 1px solid rgba(0,0,0,0.1);
   -o-box-shadow: 0px 1px 0px rgba(255,255,255,0.2);
   -ms-box-shadow: 0px 1px 0px rgba(255,255,255,0.2);
@@ -74,9 +75,11 @@ h5 {
 }
 h1 {
   font-size: 200%;
+  color: #576970;
 }
 h2 {
   font-size: 170%;
+  color: #0b6486;
 }
 h3 {
   margin: 15px auto 10px auto;
@@ -87,6 +90,7 @@ h4 {
 }
 h5 {
   font-size: 125%;
+  color: #0b6486;
 }
 ul {
   padding: 0;
@@ -128,6 +132,7 @@ input[type="text"] {
   box-shadow: 0.1px 0.15px 1px 0.5px rgba(0,0,0,0.3);
   border-style: none;
   max-width: 90%;
+  margin: 5px auto;
 }
 input[type="submit"] {
   -o-border-radius: 3;
@@ -243,7 +248,7 @@ nav.localtoc li ul li {
 }
 .body {
   width: 90%;
-  margin-right: auto;
+  margin: auto;
 }
 .headerlink {
   text-decoration: none;
@@ -308,10 +313,10 @@ footer li {
   background-color: #009fc7;
 }
 .attention .admonition-title {
-  background-color: #f54e00;
+  background-color: #f16e3c;
 }
 .caution .admonition-title {
-  background-color: #a01cb3;
+  background-color: #97649e;
 }
 .danger .admonition-title {
   background-color: #dc322f;
