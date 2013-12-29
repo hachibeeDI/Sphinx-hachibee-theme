@@ -154,6 +154,17 @@ input[type="submit"] {
   border-style: none;
   text-shadow: 1px 1px 0px #6682ca;
 }
+/*for Webkit*/
+input::-webkit-input-placeholder {
+  color: #c4d7da;
+}
+/*for Firefox*/
+input:-moz-placeholder {
+  color: #c4d7da;
+}
+input:placeholder {
+  color: #c4d7da;
+}
 p.topless {
   padding: 0 auto;
   margin: 0 auto;
