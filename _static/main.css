@@ -410,3 +410,21 @@ table .row-even {
 table .row-odd {
   background-color: #fefefe;
 }
+#raise-top {
+  background-color: #2aa198;
+  position: fixed;
+  right: 5%;
+  bottom: 80px;
+  cursor: pointer;
+  width: 70px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: #fefefe;
+  letter-spacing: 0.05em;
+}
+#raise-top:after {
+  width: inherit;
+  height: inherit;
+  content: "Top";
+}
