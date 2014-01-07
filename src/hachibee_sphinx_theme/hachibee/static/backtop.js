@@ -1,11 +1,11 @@
 var ns = (function(exports) {
-  var Slider = function constructor() {
+  var Raise = function constructor() {
     this._init_handler = function(func) {
       window.addEventListener('load', func);
     };
   };
 
-  Slider.prototype.back_to_top = function(id) {
+  Raise.prototype.register = function(id) {
     var to_top = function(e) {
       var scroll_top = document.documentElement.scrollTop || document.body.scrollTop;
       if (scroll_top > 0) {
@@ -21,9 +21,11 @@ var ns = (function(exports) {
     });
   };
 
-  exports.Slider = Slider;
+  exports.Raise = Raise;
   return exports;
 })({});
 
-var slider = new ns.Slider();
-slider.back_to_top('raise-top');
+
+var RAISE_BUTTONS_ID = 'raise-top';
+var raiser = new ns.Raise();
+raiser.register(RAISE_BUTTONS_ID);
