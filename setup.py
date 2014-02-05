@@ -14,7 +14,7 @@ classifiers = [
 
 setup(
     name='hachibee-sphinx-theme',
-    version='0.1.4',
+    version='0.1.5',
     author='OGURA_Daiki',
     author_email='8hachibee125@gmail.com',
     url='https://github.com/hachibeeDI/Sphinx-hachibee-theme',
