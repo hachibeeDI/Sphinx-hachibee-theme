@@ -10,7 +10,7 @@ header-position()
   top: 0%
   margin: auto
   width: 100%
-  height: main-font-size + 20px
+  height: main-font-size-px + 20px
 
 footer-background()
   background-color: rgba(245, 245, 245, 0.7)
@@ -47,17 +47,26 @@ box-shadow(w_offset, h_offset, blur, len, color=rgba(0,0,0,0.3))
 directive-font-style(color=#FEFEFE, shadow-color=#989DD6)
   font-weight: normal
   letter-spacing: 0.09em
-  font-size: main-font-size + 1px
+  //font-size-em: main-font-size-em + 0.1
+  font-size-em 1.7
   border-style: none
   color: color
   text-shadow: 1px 1px 0px shadow-color
+
+
+font-size-em(font_size)
+  font-size: (font_size)em
+  font-size: (font_size)rem
 
 
 full-width = 980px
 sidebar-width = 270px
 article-width = 90%
 footer-height = 80px
-main-font-size = 17px
+// TODO: fix
+main-font-size-px = 16px
+main-font-size-em = 1.6
+//
 padding-from-header = 60px
 
 base-white = #FEFEFE
@@ -75,13 +84,22 @@ light-green= #859900
 green     =  #0B691E
 
 
+
 html, body
   font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック","Meiryo","メイリオ",sans-serif
-  font-size: main-font-size
   color: black
   background-color: base-white
   font-weight: lighter
   height: 100%
+
+html
+  font-size: 62.5%
+
+body
+  font-size-em main-font-size-em
+
+div
+  font-size-em main-font-size-em
 
 div.content
   width: 100%
@@ -104,18 +122,18 @@ h3, h4, h5
   line-bottom(.1, .2)
 
 h1
-  font-size: 200%
+  font-size-em 4.0
   color: #576970
 h2
-  font-size: 170%
+  font-size-em 3.2
   color: #0B6486
 h3
   margin: 15px auto 10px auto
-  font-size: 150%
+  font-size-em: 2.8
 h4
-  font-size: 135%
+  font-size-em: 2.5
 h5
-  font-size: 125%
+  font-size-em: 2.0
   color: #0B6486
 
 
@@ -203,7 +221,7 @@ header
     list-style: none
 
 .pre
-  font-size: (main-font-size - 1px)
+  font-size-em (main-font-size-em - 0.1)
   background-color: light-yellow
 
 .documentwrapper
@@ -239,7 +257,7 @@ header
   margin-top: padding-from-header * 3
   margin-left: auto
   width: 85%
-  font-size: 90%
+  font-size-em main-font-size-em - 0.3
   .relative
     margin: 60px auto
   .topless
@@ -275,7 +293,7 @@ nav.localtoc
   text-decoration: none
   margin-left: 10px
   color: #32A1BD
-  font-size: 75%
+  font-size-em main-font-size-em - 0.1
   &:visited
     color: #32A1BD
 
@@ -368,8 +386,8 @@ table
   box-shadow(.1px, 0.15px, 0px, 0px)
   caption
     text-align: center
-    font-size: main-font-size + 1px
-    line-height: main-font-size + 20px
+    font-size-em main-font-size-em + 0.1
+    line-height: main-font-size-px + 20px
   thead
     color: #FFFFFF
     letter-spacing: 0.25em
@@ -380,11 +398,11 @@ table
       border: 2px solid rgba(243, 243, 243, 0.2)
       text-align: center
       font-weight: normal
-      font-size: main-font-size + 1px
+      font-size-em: main-font-size-em + 0.1
   tbody
     //box-shadow(0.1px, 0.15px, 1px, .5px)
   tr
-    height: main-font-size + 25px
+    height: main-font-size-px + 25px
   td
     box-shadow(0.1px, 0.15px, 1px, 0px)
     padding: 0 5px
