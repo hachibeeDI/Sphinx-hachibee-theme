@@ -1,4 +1,7 @@
 @charset "utf-8"
+@import "colors"
+@import "widget-decorations"
+
 @import "reset"
 
 header-background()
@@ -22,28 +25,6 @@ footer-position()
   width: 100%
   margin: auto
 
-line-bottom(op1=.2, op2=.3)
-  border-bottom: 1px solid rgba(0, 0, 0, op1);
-  -o-box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
-  -ms-box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
-  -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
-  -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, op2)
-
-border-radius(n)
-  -o-border-radius: n
-  -ms-border-radius: n
-  -moz-border-radius: n
-  -webkit-border-radius: n
-  border-radius: n
-
-box-shadow(w_offset, h_offset, blur, len, color=rgba(0,0,0,0.3))
-  -o-box-shadow: w_offset h_offset blur len color
-  -ms-box-shadow: w_offset h_offset blur len color
-  -moz-box-shadow: w_offset h_offset blur len color
-  -webkit-box-shadow: w_offset h_offset blur len color
-  box-shadow: w_offset h_offset blur len color
-
 directive-font-style(color=#FEFEFE, shadow-color=#989DD6)
   font-weight: normal
   letter-spacing: 0.09em
@@ -55,8 +36,8 @@ directive-font-style(color=#FEFEFE, shadow-color=#989DD6)
 
 
 font-size-em(font_size)
-  font-size: (font_size)em
-  font-size: (font_size)rem
+  font-size: unit(font_size, 'em')
+  font-size: unit(font_size, 'rem')
 
 
 full-width = 980px
@@ -68,21 +49,6 @@ main-font-size-px = 16px
 main-font-size-em = 1.6
 //
 padding-from-header = 60px
-
-base-white = #FEFEFE
-black =      #002b36
-light-yellow = #fdf6e3
-yellow =     #C4B400
-orange =     #F16E3C
-red =        #dc322f
-magenta =    #d33682
-violet =     #97649E //#6c71c4
-light-blue = #009FC7
-blue =       #268bd2
-cyan =       #2aa198
-light-green= #859900
-green     =  #0B691E
-
 
 
 html, body
@@ -410,21 +376,3 @@ table
     background-color: #F7F7F7
   .row-odd
     background-color: base-white
-
-#raise-top
-  background-color: cyan
-  position: fixed
-  right: 5%
-  bottom: 80px
-  cursor: pointer
-
-  width: 70px
-  height: 80px
-  text-align: center
-  line-height: 80px
-  color: base-white
-  letter-spacing: .05em
-  &:after
-    width: inherit
-    height: inherit
-    content: "Top"
