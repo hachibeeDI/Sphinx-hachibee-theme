@@ -14,3 +14,4 @@
 .icon-previous:before{display:inline-block;font-family:'Genericons';font-size:2.6em;font-size:2.6rem;vertical-align:middle;content:'\f430'}
 #raise-top{border-radius:60px;background-color:#2aa198;position:fixed;right:5%;bottom:80px;cursor:pointer;width:80px;height:80px;text-align:center;line-height:80px;color:#fefefe;letter-spacing:.05em;}
 #raise-top:before{display:inline-block;font-family:'Genericons';font-size:4.2em;font-size:4.2rem;vertical-align:middle;content:'\f432'}
+a.reference.external:before{display:inline-block;font-family:'Genericons';font-size:2.6em;font-size:2.6rem;vertical-align:middle;content:'\f107'}
