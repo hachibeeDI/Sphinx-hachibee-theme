@@ -193,7 +193,7 @@ header
 
 .documentwrapper
   background-color: base-white
-  min-width: full-width
+  min-width: main-min-width
   width: 100%
   height: auto
   min-height: 100%
@@ -206,8 +206,8 @@ header
   margin: 0 auto
   padding-top: padding-from-header
   padding-bottom: footer-height + 20px
-  max-width: main-max-width
-  width: 80%
+  min-width: main-min-width
+  width: 60%
 
 
 .sidebarwrapper
@@ -219,8 +219,7 @@ header
 
 
 .sidebar
-  margin-top: padding-from-header * 3
-  margin-left: auto
+  margin: (padding-from-header * 3) auto 0 auto
   width: 85%
   font-size-em main-font-size-em - 0.3
   .relative

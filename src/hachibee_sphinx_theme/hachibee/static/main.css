@@ -38,10 +38,10 @@ header ul{padding:0;margin:auto}
 header li{display:inline-block;vertical-align:middle}
 .breadcrumb li{display:inline-block;list-style:none}
 .pre{font-size:1.5em;font-size:1.5rem;background-color:#fdf6e3}
-.documentwrapper{background-color:#fefefe;min-width:full-width;width:100%;height:auto;min-height:100%;margin:0 auto}
-.document{overflow:hidden;background-color:#fefefe;margin:0 auto;padding-top:60px;padding-bottom:100px;max-width:1024px;width:80%}
+.documentwrapper{background-color:#fefefe;min-width:320px;width:100%;height:auto;min-height:100%;margin:0 auto}
+.document{overflow:hidden;background-color:#fefefe;margin:0 auto;padding-top:60px;padding-bottom:100px;min-width:320px;width:60%}
 .sidebarwrapper{float:right;margin:0 auto;width:20%;min-width:270px;height:100%}
-.sidebar{margin-top:180px;margin-left:auto;width:85%;font-size:1.3em;font-size:1.3rem;}
+.sidebar{margin:180px auto 0 auto;width:85%;font-size:1.3em;font-size:1.3rem;}
 .sidebar .relative{margin:60px auto}
 .sidebar .topless{width:inherit;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 ul,ol{margin-left:30px}
