@@ -80,15 +80,20 @@ ul
 ol
 ---------
 
-#. this
-#. is
+1. this
+2. is
 
-  #. nested
-  #. ol
+   A. nested
+   B. ol
 
-     this is nested ol
+      this is nested ol
 
-#. list
+      I. roman
+      II. roman
+      III. roman
+      IV. this is roman style
+
+3. list
 
    this is list section
 
@@ -144,3 +149,28 @@ CodeBlock
       for i in range(n):
          print "Hello, Sphinx!"
    hello(10)
+
+Link
+======
+
+external
+----------
+
+https://www.google.co.jp/
+
+internal
+-----------------------------------------------------------------
+
+:doc:`directive`
+
+
+Quotation
+=================
+
+   | 子曰、
+   | 吾十有五而志于学、
+   | 三十而立、
+   | 四十而不惑、
+   | 五十而知天命、
+   | 六十而耳順、
+   | 七十而従心所欲、不踰矩。

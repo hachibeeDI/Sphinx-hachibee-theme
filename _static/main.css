@@ -17,6 +17,11 @@ h3{margin:15px auto 10px auto;font-size:2.8em;font-size:2.8rem}
 h4{font-size:2.5em;font-size:2.5rem}
 h5{font-size:2em;font-size:2rem;color:#0b6486}
 ul{padding:0;margin:20px auto 0 15px}
+ol{padding:0;margin:20px auto 0 15px;}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.upperroman{list-style-type:upper-roman}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.lowerroman{list-style-type:lower-roman}
 li ul{margin:5px auto 0 15px}
 li{word-wrap:break-word;margin:5px auto;}
 li p{margin-top:0;}
@@ -38,10 +43,10 @@ header ul{padding:0;margin:auto}
 header li{display:inline-block;vertical-align:middle}
 .breadcrumb li{display:inline-block;list-style:none}
 .pre{font-size:1.5em;font-size:1.5rem;background-color:#fdf6e3}
-.documentwrapper{background-color:#fefefe;width:980px;height:auto;min-height:100%;margin:0 auto}
-.document{overflow:hidden;background-color:#fefefe;margin-right:auto;padding-top:60px;padding-bottom:100px;width:710px}
-.sidebarwrapper{float:right;margin:0 auto;width:270px;min-width:270px;height:100%}
-.sidebar{margin-top:180px;margin-left:auto;width:85%;font-size:1.3em;font-size:1.3rem;}
+.documentwrapper{background-color:#fefefe;min-width:320px;width:100%;height:auto;min-height:100%;margin:0 auto}
+.document{overflow:hidden;background-color:#fefefe;margin:0 auto;padding-top:60px;padding-bottom:100px;min-width:320px;width:60%}
+.sidebarwrapper{float:right;margin:0 auto;width:20%;min-width:270px;height:100%}
+.sidebar{margin:180px auto 0 auto;width:85%;font-size:1.3em;font-size:1.3rem;}
 .sidebar .relative{margin:60px auto}
 .sidebar .topless{width:inherit;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 ul,ol{margin-left:30px}
@@ -81,3 +86,4 @@ table tr{height:41px}
 table td{-o-box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);-ms-box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);-moz-box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);-webkit-box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);padding:0 5px}
 table .row-even{background-color:#f7f7f7}
 table .row-odd{background-color:#fefefe}
+.icon-index:before,.icon-next:before,.icon-previous:before{font-size:3.6em !important;font-size:3.6rem !important}

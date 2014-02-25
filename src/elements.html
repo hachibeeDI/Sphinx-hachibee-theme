@@ -7,7 +7,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         
-        <title>Header1 &mdash; test 0.0.1 documentation</title>
+        <title>Header1 &mdash; example 0.1.5 documentation</title>
 
         
     <link rel="stylesheet" href="../_static/normalize.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.0.1',
+        VERSION:     '0.1.5',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -36,7 +36,7 @@
             <div class="left">
     <ul class="breadcrumb">
         <li>
-            <a href="../index.html">test 0.0.1 documentation</a>
+            <a href="../index.html">example 0.1.5 documentation</a>
              &raquo;
         </li> 
     </ul>
@@ -44,17 +44,20 @@
             <div class="right">
                 
     <ul class="relative">
-        <li class="hoge">
+      <li >
             <a href="../genindex.html" title="General Index"
-                accesskey="I">index</a>
+               class="icon-index"
+                accesskey="I"></a>
         </li>
-        <li class="hoge">
+      <li >
             <a href="directive.html" title="Directives"
-                accesskey="N">next</a>
+               class="icon-next"
+                accesskey="N"></a>
         </li>
-        <li class="hoge">
+      <li >
             <a href="../index.html" title="Welcome to test’s documentation!"
-                accesskey="P">previous</a>
+               class="icon-previous"
+                accesskey="P"></a>
         </li>
     </ul>
             </div>
@@ -87,6 +90,12 @@
 <li><a class="reference internal" href="#decoration">Decoration</a></li>
 <li><a class="reference internal" href="#table">Table</a></li>
 <li><a class="reference internal" href="#codeblock">CodeBlock</a></li>
+<li><a class="reference internal" href="#link">Link</a><ul>
+<li><a class="reference internal" href="#external">external</a></li>
+<li><a class="reference internal" href="#internal">internal</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#quotation">Quotation</a></li>
 </ul>
 </li>
 </ul>
@@ -181,20 +190,24 @@ this is secondline in section</p>
 </div>
 <div class="section" id="ol">
 <h3>ol<a class="headerlink" href="#ol" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li>this</li>
-<li>is</li>
-</ol>
-<blockquote>
-<div><ol class="arabic">
+<ol class="arabic">
+<li><p class="first">this</p>
+</li>
+<li><p class="first">is</p>
+<ol class="upperalpha">
 <li><p class="first">nested</p>
 </li>
 <li><p class="first">ol</p>
 <p>this is nested ol</p>
+<ol class="upperroman simple">
+<li>roman</li>
+<li>roman</li>
+<li>roman</li>
+<li>this is roman style</li>
+</ol>
 </li>
 </ol>
-</div></blockquote>
-<ol class="arabic">
+</li>
 <li><p class="first">list</p>
 <p>this is list section</p>
 </li>
@@ -286,6 +299,31 @@ crunchy, now would it?</td>
 </pre></div>
 </div>
 </div>
+<div class="section" id="link">
+<h2>Link<a class="headerlink" href="#link" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="external">
+<h3>external<a class="headerlink" href="#external" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.google.co.jp/">https://www.google.co.jp/</a></p>
+</div>
+<div class="section" id="internal">
+<h3>internal<a class="headerlink" href="#internal" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="directive.html"><em>Directives</em></a></p>
+</div>
+</div>
+<div class="section" id="quotation">
+<h2>Quotation<a class="headerlink" href="#quotation" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="line-block">
+<div class="line">子曰、</div>
+<div class="line">吾十有五而志于学、</div>
+<div class="line">三十而立、</div>
+<div class="line">四十而不惑、</div>
+<div class="line">五十而知天命、</div>
+<div class="line">六十而耳順、</div>
+<div class="line">七十而従心所欲、不踰矩。</div>
+</div>
+</div></blockquote>
+</div>
 </div>
 
     <div id="raise-top"></div>
@@ -297,7 +335,7 @@ crunchy, now would it?</td>
         </div> <!-- documentwrapper -->
         <footer>
             <p>
-                &copy; Copyright 2013, OGURA_Daiki.
+                &copy; Copyright 2014, OGURA_Daiki.
             </p>
             <p>
               Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.
