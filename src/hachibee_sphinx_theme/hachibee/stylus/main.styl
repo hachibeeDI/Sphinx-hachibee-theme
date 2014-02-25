@@ -35,9 +35,13 @@ directive-font-style(color=#FEFEFE, shadow-color=#989DD6)
   text-shadow: 1px 1px 0px shadow-color
 
 
-font-size-em(font_size)
-  font-size: unit(font_size, 'em')
-  font-size: unit(font_size, 'rem')
+font-size-em(font_size, is-important=false)
+  if is-important
+    font-size: unit(font_size, 'em') !important
+    font-size: unit(font_size, 'rem') !important
+  else
+    font-size: unit(font_size, 'em')
+    font-size: unit(font_size, 'rem')
 
 
 main-min-width = 320px  // width of iphone(in portrait mode)
@@ -374,3 +378,7 @@ table
     background-color: #F7F7F7
   .row-odd
     background-color: base-white
+
+
+.icon-index:before , .icon-next:before , .icon-previous:before
+  font-size-em 3.6 is-important=true

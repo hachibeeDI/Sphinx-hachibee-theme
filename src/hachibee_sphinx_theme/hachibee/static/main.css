@@ -81,3 +81,4 @@ table tr{height:41px}
 table td{-o-box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);-ms-box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);-moz-box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);-webkit-box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);padding:0 5px}
 table .row-even{background-color:#f7f7f7}
 table .row-odd{background-color:#fefefe}
+.icon-index:before,.icon-next:before,.icon-previous:before{font-size:3.6em !important;font-size:3.6rem !important}

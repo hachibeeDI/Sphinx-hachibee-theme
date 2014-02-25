@@ -13,8 +13,8 @@
   font-style: normal
 
 font-size-em(font_size)
-  font-size: unit(font_size, 'em') !important
-  font-size: unit(font_size, 'rem') !important
+  font-size: unit(font_size, 'em')
+  font-size: unit(font_size, 'rem')
 
 
 [class^="icon-"]:before, [class*=" icon-"]:before
@@ -78,6 +78,17 @@ icon-default-style(font-name='Genericons', size=2.6)
   icon-default-style()
   content: '\f432'
 
+.icon-index:before
+  icon-default-style()
+  content: '\f409'
+
+.icon-next:before
+  icon-default-style()
+  content: '\f429'
+
+.icon-previous:before
+  icon-default-style()
+  content: '\f430'
 
 
 // raise to top button -----------
