@@ -17,6 +17,11 @@ h3{margin:15px auto 10px auto;font-size:2.8em;font-size:2.8rem}
 h4{font-size:2.5em;font-size:2.5rem}
 h5{font-size:2em;font-size:2rem;color:#0b6486}
 ul{padding:0;margin:20px auto 0 15px}
+ol{padding:0;margin:20px auto 0 15px;}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.upperroman{list-style-type:upper-roman}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.lowerroman{list-style-type:lower-roman}
 li ul{margin:5px auto 0 15px}
 li{word-wrap:break-word;margin:5px auto;}
 li p{margin-top:0;}
