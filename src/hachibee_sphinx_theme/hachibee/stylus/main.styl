@@ -40,7 +40,8 @@ font-size-em(font_size)
   font-size: unit(font_size, 'rem')
 
 
-full-width = 980px
+main-min-width = 320px  // width of iphone(in portrait mode)
+main-max-width = 1024px
 sidebar-width = 270px
 article-width = 90%
 footer-height = 80px
@@ -192,29 +193,27 @@ header
 
 .documentwrapper
   background-color: base-white
-  width: full-width
-  //width: 100%
+  min-width: full-width
+  width: 100%
   height: auto
   min-height: 100%
   margin: 0 auto
 
 
 .document
-  //float: left
   overflow: hidden
   background-color: base-white
-  margin-right: auto
+  margin: 0 auto
   padding-top: padding-from-header
   padding-bottom: footer-height + 20px
-  width: full-width - sidebar-width
+  max-width: main-max-width
+  width: 80%
 
 
 .sidebarwrapper
   float: right
-  //background-color: #F5F5F5
   margin: 0 auto
-  //padding-top: padding-from-header
-  width: sidebar-width
+  width: 20%
   min-width: sidebar-width
   height: 100%
 
