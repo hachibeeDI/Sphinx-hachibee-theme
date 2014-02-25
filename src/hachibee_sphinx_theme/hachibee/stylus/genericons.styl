@@ -117,3 +117,17 @@ raise-topbutton-size()
 a.reference.external:before
   icon-default-style()
   content: '\f107'
+
+quote-indent=20px
+blockquote
+  overflow: hidden
+  margin-left: 0
+  background-color: light-gray
+  padding-left: quote-indent
+
+blockquote:before
+  icon-default-style()
+  content: '\f106'
+  margin-left: 0px - quote-indent
+  color: gray
+
