@@ -9,8 +9,8 @@ footer{font-size:1em;font-size:1rem;}
 footer p{margin:auto;display:block;height:35px;line-height:35px;vertical-align:middle}
 .breadcrumb{max-width:250px;}
 .breadcrumb li{max-width:50px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sidebarwrapper{float:none;width:90%;text-align:center;}
-.sidebarwrapper .localtoc{text-align:left}
+.sidebarwrapper{float:none;width:90%;}
+.sidebarwrapper h1,.sidebarwrapper h2,.sidebarwrapper h3,.sidebarwrapper h4,.sidebarwrapper h5{text-align:center}
 .sidebarwrapper .relative{display:none}
 .sidebar{margin-top:60px}
 .document{padding-top:0;width:90%}
