@@ -1,6 +1,6 @@
 # my simple sphinx theme
 
-It has Japanese friendly font declaration.
+It has Japanese friendly font declaration and responsive stylings.
 
 
 ## Sample Page
