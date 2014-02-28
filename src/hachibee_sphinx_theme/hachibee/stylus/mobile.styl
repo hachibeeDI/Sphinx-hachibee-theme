@@ -1,0 +1,50 @@
+@charset "utf-8"
+
+@media screen and (max-width: 320px)
+  [class^="icon-"]:before, [class*=" icon-"]:before
+    font-size: 1.9em
+    font-size: 1.9rem
+  img
+    margin: auto
+    max-width: 280px
+    height: auto
+    image-rendering: optimizeSpeed; // Legal fallback
+    image-rendering: -moz-crisp-edges; // Firefox
+    image-rendering: -o-crisp-edges; // Opera
+    image-rendering: -webkit-optimize-contrast; // Chrome, Safari
+    image-rendering: crisp-edges; // CSS3 Proposed
+  header
+    .right
+      margin-right: 0
+    .left
+      margin-left: 0
+
+  .breadcrumb
+    max-width: 250px
+    li
+      max-width: 90px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+
+  .sidebarwrapper
+    float: none
+    width: 90%
+    text-align: center
+    .localtoc
+      text-align: left
+    // disable relative links in side content
+    .relative
+      display: none
+  .sidebar
+    margin-top: 60px
+
+  #raise-top
+    width: 35px
+    height: @width
+    line-height: @width
+    bottom: 10px
+    &:before
+      font-size: 2.8em
+      font-size: 2.8rem
+
