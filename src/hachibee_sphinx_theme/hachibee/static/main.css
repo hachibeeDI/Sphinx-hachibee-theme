@@ -16,6 +16,7 @@ h2{margin:25px auto 17px auto;font-size:3.2em;font-size:3.2rem;color:#0b6486;let
 h3{margin:15px auto 10px auto;font-size:2.8em;font-size:2.8rem;letter-spacing:-.01em;letter-spacing:-.01rem;line-height:3.5em;line-height:3.5rem}
 h4{font-size:2.5em;font-size:2.5rem}
 h5{font-size:2em;font-size:2rem;color:#0b6486}
+.toc-backref{color:inherit}
 ul{padding:0;margin:20px auto 0 15px}
 ol{padding:0;margin:20px auto 0 15px;}
 ol.upperalpha{list-style-type:upper-alpha}
@@ -63,18 +64,6 @@ nav.localtoc li ul li{list-style:square}
 footer{background-color:rgba(245,245,245,0.7);position:absolute;clear:both;bottom:0;width:100%;margin:auto;height:80px;}
 footer p{display:inline-block;margin:auto;padding-left:15px;line-height:80px}
 footer li{display:inline-block;list-style:none}
-.admonition{margin:30px auto;padding-bottom:5px;-o-box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);-ms-box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);-moz-box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);-webkit-box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);background-color:#f7f7f7;}
-.admonition p,.admonition ul{padding-left:20px;padding-right:20px}
-.admonition-title{border-bottom:1px solid rgba(0,0,0,0.2);-o-box-shadow:0 1px 0 rgba(255,255,255,0.3);-ms-box-shadow:0 1px 0 rgba(255,255,255,0.3);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.3);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.3);-o-box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);-ms-box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);padding-left:15px;font-weight:normal;letter-spacing:.09em;font-size:1.7em;font-size:1.7rem;border-style:none;color:#fefefe;text-shadow:1px 1px 0 #989dd6;background-color:#009fc7}
-.attention .admonition-title{background-color:#f16e3c}
-.caution .admonition-title{background-color:#97649e}
-.danger .admonition-title{background-color:#dc322f}
-.error .admonition-title{background-color:#dc322f}
-.hint .admonition-title{background-color:#c4b400}
-.important .admonition-title{background-color:#d33682}
-.note .admonition-title{background-color:#009fc7}
-.tip .admonition-title{background-color:#2aa198}
-.warning .admonition-title{background-color:#dc322f}
 .left{float:left}
 .right{float:right}
 .clearer{clear:both}
@@ -89,4 +78,22 @@ table td{-o-box-shadow:.1px .15px 1px 0 rgba(0,0,0,0.3);-ms-box-shadow:.1px .15p
 table .row-even{background-color:#f7f7f7}
 table .row-odd{background-color:#fefefe}
 #contents{border-left:ridge 23px #30cdd5;padding:10px 0}
+.admonition{margin:30px auto;padding-bottom:5px;-o-box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);-ms-box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);-moz-box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);-webkit-box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);box-shadow:.1px .15px 1px .5px rgba(0,0,0,0.3);background-color:#f7f7f7;}
+.admonition p,.admonition ul{padding-left:20px;padding-right:20px}
+.admonition-title{border-bottom:1px solid rgba(0,0,0,0.2);-o-box-shadow:0 1px 0 rgba(255,255,255,0.3);-ms-box-shadow:0 1px 0 rgba(255,255,255,0.3);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.3);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.3);-o-box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);-ms-box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);box-shadow:0 1px 0 rgba(255,255,255,0.3) rgba(0,0,0,0.3);padding-left:15px;font-weight:normal;letter-spacing:.09em;font-size:1.7em;font-size:1.7rem;border-style:none;color:#fefefe;text-shadow:1px 1px 0 #989dd6;background-color:#009fc7}
+.attention .admonition-title{background-color:#f16e3c}
+.caution .admonition-title{background-color:#97649e}
+.danger .admonition-title{background-color:#dc322f}
+.error .admonition-title{background-color:#dc322f}
+.hint .admonition-title{background-color:#c4b400}
+.important .admonition-title{background-color:#d33682}
+.note .admonition-title{background-color:#009fc7}
+.tip .admonition-title{background-color:#2aa198}
+.warning .admonition-title{background-color:#dc322f}
+.guilabel{font-style:normal;}
+.guilabel:before{color:#0b691e;display:inline;content:"【";margin-right:2px}
+.guilabel:after{color:#0b691e;display:inline;content:"】";margin-left:2px}
+.menuselection{font-style:normal;}
+.menuselection:before{color:#0b691e;display:inline;content:"《";margin-right:2px}
+.menuselection:after{color:#0b691e;display:inline;content:"》";margin-left:2px}
 .icon-index:before,.icon-next:before,.icon-previous:before{font-size:3.6em !important;font-size:3.6rem !important}
