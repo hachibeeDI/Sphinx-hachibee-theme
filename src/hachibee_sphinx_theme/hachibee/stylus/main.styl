@@ -52,6 +52,8 @@ main-font-size-em = 1.6
 //
 padding-from-header = 60px
 
+left-indent = 30px
+
 
 html, body
   font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック","Meiryo","メイリオ",sans-serif
@@ -87,6 +89,8 @@ h1, h2, h3, h4, h5
   text-align: left
   & a
     color: inherit
+    &:visited
+      color: inherit
 
 h3, h4, h5
   margin: 15px auto 8px auto
@@ -266,7 +270,7 @@ header
     white-space: nowrap
 
 ul, ol
-  margin-left: 30px
+  margin-left: left-indent
 
 nav.localtoc
   ul
@@ -278,6 +282,35 @@ nav.localtoc
       margin-left: 15px
       li
         list-style: square
+
+.docutils
+  dt
+    margin-top: 18px
+    font-weight: bold
+  dd
+    margin-left: 30px
+    -webkit-margin-start: 30px
+    -moz-margin-start: 30px
+    p
+      margin: 0.4em auto
+      margin: 0.4rem auto
+
+// field list
+.field
+  th.field-name
+    vertical-align: top
+    border-style: none
+    font-weight: bold
+  td.field-body
+    vertical-align: top
+    border-style: none
+    box-shadow: none
+    padding-left: 10px
+    p
+      margin: 0.4em auto
+      margin: 0.4rem auto
+      &.first
+        set_rem(margin-top, 0.2)
 
 #searchbox
   margin: 50px auto
