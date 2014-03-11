@@ -1,30 +1,39 @@
 @import "colors"
 
-.guilabel
+plain-font()
   font-style: normal
+  font-weight: inherit
+
+emphasis-font()
+  color: green
+  font-weight: bold
+
+
+.guilabel
+  plain-font()
   &:before
-    color: green
+    emphasis-font()
     display: inline
     content: "【"
     margin-right: 2px
 
   &:after
-    color: green
+    emphasis-font()
     display: inline
     content: "】"
     margin-left: 2px
 
 
 .menuselection
-  font-style: normal
+  plain-font()
   &:before
-    color: green
+    emphasis-font()
     display: inline
     content: "《"
     margin-right: 2px
 
   &:after
-    color: green
+    emphasis-font()
     display: inline
     content: "》"
     margin-left: 2px
