@@ -100,9 +100,13 @@ table .row-odd{background-color:#fefefe}
 .tip .admonition-title{background-color:#2aa198}
 .warning .admonition-title{background-color:#db514f}
 .guilabel{font-style:normal;font-weight:inherit;}
-.guilabel:before{color:#0b691e;font-weight:bold;display:inline;content:"【";margin-right:2px}
-.guilabel:after{color:#0b691e;font-weight:bold;display:inline;content:"】";margin-left:2px}
+.guilabel:before{color:#0b691e;font-weight:bold;display:inline;content:"《";margin-right:2px}
+.guilabel:after{color:#0b691e;font-weight:bold;display:inline;content:"》";margin-left:2px}
 .menuselection{font-style:normal;font-weight:inherit;}
-.menuselection:before{color:#0b691e;font-weight:bold;display:inline;content:"《";margin-right:2px}
-.menuselection:after{color:#0b691e;font-weight:bold;display:inline;content:"》";margin-left:2px}
+.menuselection:before{color:#0b691e;font-weight:bold;display:inline}
+.menuselection:after{color:#0b691e;font-weight:bold;display:inline}
+.menu:before{display:inline;font-weight:bold;content:"[";margin-right:2px}
+.menu:after{display:inline;font-weight:bold;content:"]";margin-left:2px}
+.menu-separator:before{color:#0b691e;display:inline;font-size:2.2rem !important}
+.menuselection .menu-separator:last-child:before{display:none;content:""}
 .icon-index:before,.icon-next:before,.icon-previous:before{font-size:3.6em !important;font-size:3.6rem !important}
