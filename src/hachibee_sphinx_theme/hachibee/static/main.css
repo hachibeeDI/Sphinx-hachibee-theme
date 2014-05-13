@@ -3,7 +3,7 @@ div{margin:0;padding:0}
 ul,ol{margin:0;padding:0}
 table{border-collapse:collapse;border:none;border-spacing:0}
 th,td{vertical-align:middle;border:solid 1px #000;font-weight:normal;text-align:left}
-html,body{font-family:"游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック","Meiryo","メイリオ",sans-serif;color:#002b36;background-color:#fefefe;font-weight:lighter;height:100%}
+html,body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Meiryo","メイリオ","ＭＳ ゴシック",sans-serif;color:#002b36;background-color:#fefefe;font-weight:lighter;height:100%}
 html{font-size:62.5%}
 body{font-size:1.6em;font-size:1.6rem;text-rendering:optimizeLegibility;text-align:justify;text-justify:distribute;-ms-text-justify:distribute}
 div{font-size:1.6em;font-size:1.6rem}
