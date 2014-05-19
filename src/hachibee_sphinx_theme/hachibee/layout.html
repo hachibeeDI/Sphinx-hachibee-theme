@@ -180,7 +180,7 @@
         {%- block footer %}
         <footer>
             {%- if show_copyright %}
-            <p>
+            <p class="show-copyright">
               {%- if hasdoc('copyright') %}
                 {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
               {%- else %}
@@ -188,16 +188,20 @@
               {%- endif %}
             </p>
             {%- endif %}
+
             {%- if last_updated %}
-            <p>
+            <p class="last-updated">
               {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
             </p>
             {%- endif %}
             {%- if show_sphinx %}
-            <p>
+            <p class="show-sphinx">
               {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
             </p>
             {%- endif %}
+            {% trans %}
+              <p class="theme-info"><a href="https://pypi.python.org/pypi/hachibee-sphinx-theme">Sphinx-hachibee-theme</a> is hosted on <a href="https://github.com/hachibeeDI/Sphinx-hachibee-theme">Github</a></p>
+            {% endtrans %}
         </footer>
         {%- endblock footer %}
     </div>

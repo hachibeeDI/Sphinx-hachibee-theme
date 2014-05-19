@@ -334,14 +334,19 @@ footer
   footer-background()
   footer-position()
   height: footer-height
-  p
+  .show-copyright, .last-updated, .show-sphinx
     display: inline-block
     margin: auto
     padding-left: 15px
-    line-height: footer-height
+    line-height: footer-height - 30px
+  .theme-info
+    margin: auto
+    padding: 0 35px
+    line-height: 30px
   li
     display: inline-block
     list-style: none
+
 
 .left
   float: left
