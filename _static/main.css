@@ -33,7 +33,7 @@ a{color:#009fc7;text-decoration:none;}
 a:hover{color:#427daf;text-decoration:underline}
 a:visited{color:#be4a94}
 em{font-weight:bold}
-input[type="text"]{-webkit-box-shadow:.1px .15px 1px .5px;box-shadow:.1px .15px 1px .5px;border-style:none;max-width:90%;margin:5px auto}
+input[type="text"]{-webkit-box-shadow:0 .15px 1px .4px;box-shadow:0 .15px 1px .4px;border-style:none;max-width:90%;margin:5px auto}
 input[type="submit"]{-webkit-border-radius:3;border-radius:3;-webkit-box-shadow:.1px .15px 2px .1px;box-shadow:.1px .15px 2px .1px;display:inline-block;color:#fefefe;padding:6px 10px 2px 10px;background-color:#27b9d4;font-weight:normal;letter-spacing:.09em;border-style:none;text-shadow:1px 1px 0 #6682ca}
 input::-webkit-input-placeholder{color:#c4d7da}
 input:-moz-placeholder{color:#c4d7da}
@@ -70,7 +70,8 @@ nav.localtoc li ul li{list-style:square}
 .headerlink{text-decoration:none;margin-left:10px;color:#32a1bd;font-size:1.5em;font-size:1.5rem;}
 .headerlink:visited{color:#32a1bd}
 footer{background-color:rgba(245,245,245,0.7);position:absolute;clear:both;bottom:0;width:100%;margin:auto;height:80px;}
-footer p{display:inline-block;margin:auto;padding-left:15px;line-height:80px}
+footer .show-copyright,footer .last-updated,footer .show-sphinx{display:inline-block;margin:auto;padding-left:15px;line-height:50px}
+footer .theme-info{margin:auto;padding:0 35px;line-height:30px}
 footer li{display:inline-block;list-style:none}
 .left{float:left}
 .right{float:right}
