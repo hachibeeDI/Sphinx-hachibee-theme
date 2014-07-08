@@ -30,14 +30,17 @@ footer-position()
 
 font-size-em(font_size, is-important=false)
   if is-important
-    font-size: unit(font_size, 'em') !important
+    font-size: unit(font_size, 'px') !important
     font-size: unit(font_size, 'rem') !important
   else
-    font-size: unit(font_size, 'em')
+    font-size: unit(font_size, 'px')
     font-size: unit(font_size, 'rem')
 
 set_rem(prop, font_size)
-  {prop}: unit(font_size, 'em')
+  /*
+    px fall back should adjust font-size as follow `html {font-size: 62.5%;}`
+  */
+  {prop}: unit(font_size, 'px')
   {prop}: unit(font_size, 'rem')
 
 
@@ -56,10 +59,10 @@ left-indent = 30px
 
 
 html, body
-  font-family: "Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Meiryo","メイリオ","ＭＳ ゴシック",sans-serif
+  font-family: "Avenir Next","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Meiryo","メイリオ","ＭＳ ゴシック",sans-serif
   color: black
   background-color: base-white
-  font-weight: lighter
+  //font-weight: lighter
   height: 100%
 
 html
@@ -85,6 +88,7 @@ div.content
 
 
 h1, h2, h3, h4, h5
+  font-family: "Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Meiryo","メイリオ","ＭＳ ゴシック",sans-serif
   font-weight: lighter
   text-align: left
   & a
@@ -171,6 +175,14 @@ a
 em
   font-weight: bold
 
+cite
+  set_rem(margin-left, 0.2)
+  set_rem(margin-right, 0.2)
+  font-weight: normal
+  background-color: light-gray
+
+pre
+  font-family: "Ricty-Discord","Ricty-Discord","Osaka－等幅","Osaka-Mono",monospace,serif
 
 input[type="text"]
   box-shadow(0px, .15px, 1px, .4px)
@@ -223,9 +235,32 @@ header
     display: inline-block
     list-style: none
 
+// ---- pre like section -> in rst '`'
+common-property-of-pre()
+  set_rem(padding-left, 0.4)
+  set_rem(padding-right, 0.4)
+  font-weight: normal
+  background-color: light-gray
+  box-shadow(.1px, 0.1px, 0px, .1px darken(@background-color, 40%))
+
+// ``
+cite
+  common-property-of-pre()
+
+// :command:``
+strong.command
+  common-property-of-pre()
+  font-family: "Ricty-Discord","Ricty-Discord","Osaka－等幅","Osaka-Mono",monospace,serif
+
+// ````
 .pre
-  font-size-em (main-font-size-em - 0.1)
+  common-property-of-pre()
   background-color: light-yellow
+
+// :file:``
+tt.file .pre
+  background-color: light-gray
+// ----
 
 .section
   margin: 25px auto
