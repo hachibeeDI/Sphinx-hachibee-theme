@@ -188,7 +188,24 @@ Roles
 
   :guilabel:`Cancel`
 
-
 - menuselection
 
   :menuselection:`Edit --> Find --> Jump`
+
+
+- cite
+
+  `cite`
+
+- pre class
+
+  ``pre-style``
+
+- file
+
+  :file:`/user/local/bin/python`
+
+
+- command
+
+  :command:`make html`
