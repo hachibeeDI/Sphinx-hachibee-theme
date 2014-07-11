@@ -129,16 +129,20 @@ tt.file .pre:before
   color: #3580B7
   content: '\f443'
 
+
 quote-indent=20px
 blockquote
   overflow: hidden
+  padding: 10px 0 10px quote-indent
+  margin: 10px 0
+  border-radius(3px)
   margin-left: 0
   background-color: light-gray
-  padding-left: quote-indent
 
 blockquote:before
   icon-default-style()
   content: '\f106'
   margin-left: 0px - quote-indent
+  padding-left: 5px
   color: gray
 
