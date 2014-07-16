@@ -1,7 +1,7 @@
 (function() {
   var RoleAdjuster;
 
-  RoleAdjuster = (function(exports) {
+  RoleAdjuster = (function(namespace) {
     var menuselection;
     menuselection = function() {
       var _create_menulabel;
@@ -42,10 +42,47 @@
         }
       });
     };
-    exports.menuselection = menuselection;
-    return exports;
+    namespace.menuselection = menuselection;
+    return namespace;
   })({});
 
   RoleAdjuster.menuselection();
+
+}).call(this);
+
+(function() {
+  var ELEMENT_OF_HEADER, ELEMENT_OF_RAISETOP_BUTTON, ElementAdjuster, SELECTOR_OF_HEADER, SELECTOR_OF_RAISETOP_BUTTON;
+
+  SELECTOR_OF_HEADER = '#top-header';
+
+  ELEMENT_OF_HEADER = document.querySelector(SELECTOR_OF_HEADER);
+
+  SELECTOR_OF_RAISETOP_BUTTON = '#raise-top';
+
+  ELEMENT_OF_RAISETOP_BUTTON = document.querySelector(SELECTOR_OF_RAISETOP_BUTTON);
+
+  ElementAdjuster = (function(namespace) {
+    namespace.phantom_header = function() {
+      var scroll_y;
+      scroll_y = document.documentElement.scrollTop || document.body.scrollTop;
+      if (scroll_y <= 30) {
+        return ELEMENT_OF_HEADER.className = "";
+      } else {
+        return ELEMENT_OF_HEADER.className = "modest";
+      }
+    };
+    namespace.phantom_raise_top_button = function() {
+      var scroll_y;
+      scroll_y = document.documentElement.scrollTop || document.body.scrollTop;
+      if (scroll_y <= 30) {
+        return ELEMENT_OF_HEADER.className = "";
+      } else {
+        return ELEMENT_OF_HEADER.className = "modest";
+      }
+    };
+    return namespace;
+  })(ElementAdjuster || {});
+
+  window.addEventListener('scroll', ElementAdjuster.phantom_header);
 
 }).call(this);

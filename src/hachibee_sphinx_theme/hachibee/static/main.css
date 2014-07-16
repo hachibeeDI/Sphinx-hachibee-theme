@@ -46,6 +46,8 @@ header .right{margin-right:20px}
 header .left{margin-left:20px}
 header ul{padding:0;margin:auto}
 header li{display:inline-block;vertical-align:middle}
+header.modest{-webkit-transition:opacity 0.5s linear 0;-moz-transition:opacity 0.5s linear 0;-o-transition:opacity 0.5s linear 0;-ms-transition:opacity 0.5s linear 0;transition:opacity 0.5s linear 0;opacity:.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);}
+header.modest:hover{opacity:1;-ms-filter:none;filter:none}
 .breadcrumb li{display:inline-block;list-style:none}
 cite{padding-left:.4px;padding-left:.4rem;padding-right:.4px;padding-right:.4rem;font-weight:normal;background-color:#f7f7f7;-webkit-box-shadow:.1px .1px 0 .1px #949494;box-shadow:.1px .1px 0 .1px #949494}
 strong.command{padding-left:.4px;padding-left:.4rem;padding-right:.4px;padding-right:.4rem;font-weight:normal;background-color:#f7f7f7;-webkit-box-shadow:.1px .1px 0 .1px #949494;box-shadow:.1px .1px 0 .1px #949494;font-family:"Ricty-Discord","Ricty-Discord","Osaka－等幅","Osaka-Mono",monospace,serif}
