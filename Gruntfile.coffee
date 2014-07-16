@@ -21,7 +21,10 @@ module.exports = (grunt)->
     coffee:
       compile:
         files:
-          'src/hachibee_sphinx_theme/hachibee/static/main.js': 'src/hachibee_sphinx_theme/hachibee/coffee/menuselection.coffee'
+          'src/hachibee_sphinx_theme/hachibee/static/main.js': [
+            'src/hachibee_sphinx_theme/hachibee/coffee/menuselection.coffee'
+            'src/hachibee_sphinx_theme/hachibee/coffee/phantom_header.coffee'
+          ]
 
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-stylus'

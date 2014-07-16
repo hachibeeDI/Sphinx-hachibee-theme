@@ -1,5 +1,5 @@
 
-RoleAdjuster = do(exports={}) ->
+RoleAdjuster = do(namespace={}) ->
   menuselection = ->
 
     _create_menulabel = (content) ->
@@ -23,7 +23,7 @@ RoleAdjuster = do(exports={}) ->
             return el
       return
 
-  exports.menuselection = menuselection
-  return exports
+  namespace.menuselection = menuselection
+  return namespace
 
 RoleAdjuster.menuselection()
