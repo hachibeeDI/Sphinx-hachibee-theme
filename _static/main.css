@@ -35,7 +35,7 @@ a:visited{color:#be4a94}
 em{font-weight:bold}
 cite{margin-left:.2px;margin-left:.2rem;margin-right:.2px;margin-right:.2rem;font-weight:normal;background-color:#f7f7f7}
 pre{font-family:"Ricty-Discord","Ricty-Discord","Osaka－等幅","Osaka-Mono",monospace,serif;padding:10px 10px 13px 10px;margin:10px 0;-webkit-border-radius:3px;border-radius:3px}
-input[type="text"]{-webkit-box-shadow:0 .15px 1px .4px;box-shadow:0 .15px 1px .4px;border-style:none;max-width:90%;margin:5px auto}
+input[type="text"]{-webkit-box-shadow:0 0 1.3px .1px rgba(16,59,18,0.76);box-shadow:0 0 1.3px .1px rgba(16,59,18,0.76);border-style:none;max-width:90%;margin:5px auto}
 input[type="submit"]{-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:.1px .15px 2px .1px;box-shadow:.1px .15px 2px .1px;display:inline-block;color:#fefefe;padding:6px 10px 2px 10px;background-color:#27b9d4;font-weight:normal;letter-spacing:.09em;border-style:none;text-shadow:1px 1px 0 #6682ca}
 input::-webkit-input-placeholder{color:#c4d7da}
 input:-moz-placeholder{color:#c4d7da}
@@ -46,6 +46,8 @@ header .right{margin-right:20px}
 header .left{margin-left:20px}
 header ul{padding:0;margin:auto}
 header li{display:inline-block;vertical-align:middle}
+header.modest{-webkit-transition:opacity 0.5s linear 0;-moz-transition:opacity 0.5s linear 0;-o-transition:opacity 0.5s linear 0;-ms-transition:opacity 0.5s linear 0;transition:opacity 0.5s linear 0;opacity:.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);}
+header.modest:hover{opacity:1;-ms-filter:none;filter:none}
 .breadcrumb li{display:inline-block;list-style:none}
 cite{padding-left:.4px;padding-left:.4rem;padding-right:.4px;padding-right:.4rem;font-weight:normal;background-color:#f7f7f7;-webkit-box-shadow:.1px .1px 0 .1px #949494;box-shadow:.1px .1px 0 .1px #949494}
 strong.command{padding-left:.4px;padding-left:.4rem;padding-right:.4px;padding-right:.4rem;font-weight:normal;background-color:#f7f7f7;-webkit-box-shadow:.1px .1px 0 .1px #949494;box-shadow:.1px .1px 0 .1px #949494;font-family:"Ricty-Discord","Ricty-Discord","Osaka－等幅","Osaka-Mono",monospace,serif}
@@ -75,8 +77,8 @@ nav.localtoc li ul li{list-style:square}
 .headerlink{text-decoration:none;margin-left:10px;color:#32a1bd;font-size:1.5px;font-size:1.5rem;}
 .headerlink:visited{color:#32a1bd}
 footer{background-color:rgba(245,245,245,0.7);position:absolute;clear:both;bottom:0;width:100%;margin:auto;height:80px;}
-footer .show-copyright,footer .last-updated,footer .show-sphinx{display:inline-block;margin:auto;padding-left:15px;line-height:50px}
-footer .theme-info{margin:auto;padding:0 35px;line-height:30px}
+footer .show-copyright,footer .last-updated,footer .show-sphinx{display:inline-block;margin:auto;padding-left:15px;line-height:44px}
+footer .theme-info{margin:auto;padding:0 30px;line-height:27px;vertical-align:middle}
 footer li{display:inline-block;list-style:none}
 .left{float:left}
 .right{float:right}
