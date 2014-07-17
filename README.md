@@ -3,7 +3,7 @@
 It has Japanese friendly font declaration and responsive stylings.
 
 
-## Sample Page
+## Sample Page of HEAD
 
 http://hachibeedi.github.io/Sphinx-hachibee-theme/index.html
 
