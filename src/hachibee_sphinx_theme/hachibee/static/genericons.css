@@ -13,7 +13,7 @@
 .icon-next:before{display:inline-block;font-family:'Genericons';font-size:2.6em;font-size:2.6rem;vertical-align:middle;content:'\f429'}
 .icon-previous:before{display:inline-block;font-family:'Genericons';font-size:2.6em;font-size:2.6rem;vertical-align:middle;content:'\f430'}
 .icon-rightarrow:before{display:inline-block;font-family:'Genericons';font-size:2.6em;font-size:2.6rem;vertical-align:middle;content:'\f429'}
-#raise-top{border-radius:60px;background-color:#2aa198;position:fixed;right:5%;bottom:-70px;cursor:pointer;width:70px;height:70px;line-height:70px;text-align:center;color:#fefefe;letter-spacing:.05em;z-index:900;}
+#raise-top{border-radius:60px;background-color:#19b4ac;position:fixed;right:5%;bottom:-70px;cursor:pointer;width:70px;height:70px;line-height:70px;text-align:center;color:#fefefe;letter-spacing:.05em;z-index:900;}
 #raise-top:before{display:inline-block;font-family:'Genericons';font-size:4.2em;font-size:4.2rem;vertical-align:middle;content:'\f432'}
 a.reference.external:before{display:inline-block;font-family:'Genericons';font-size:2.6em;font-size:2.6rem;vertical-align:middle;content:'\f107'}
 tt.file .pre:before{display:inline-block;font-family:'Genericons';font-size:2.6em;font-size:2.6rem;vertical-align:middle;font-size:1.7em;font-size:1.7rem;color:#3580b7;content:'\f443'}
