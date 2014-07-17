@@ -72,17 +72,22 @@
       }
     };
     namespace.phantom_raise_top_button = function() {
-      var scroll_y;
+      var raiser_style, scroll_y;
       scroll_y = document.documentElement.scrollTop || document.body.scrollTop;
+      raiser_style = ELEMENT_OF_RAISETOP_BUTTON.style;
       if (scroll_y <= 30) {
-        return ELEMENT_OF_HEADER.className = "";
+        return raiser_style.bottom = "-70px";
+      } else if (scroll_y <= 330) {
+        return raiser_style.bottom = "" + (70 - (330 - scroll_y)) + "px";
       } else {
-        return ELEMENT_OF_HEADER.className = "modest";
+        return raiser_style.bottom = "70px";
       }
     };
     return namespace;
   })(ElementAdjuster || {});
 
   window.addEventListener('scroll', ElementAdjuster.phantom_header);
+
+  window.addEventListener('scroll', ElementAdjuster.phantom_raise_top_button);
 
 }).call(this);
