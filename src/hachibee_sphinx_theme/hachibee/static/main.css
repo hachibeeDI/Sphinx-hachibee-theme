@@ -36,7 +36,7 @@ em{font-weight:bold}
 cite{margin-left:.2px;margin-left:.2rem;margin-right:.2px;margin-right:.2rem;font-weight:normal;background-color:#f7f7f7}
 pre{font-family:"Ricty-Discord","Ricty-Discord","Osaka－等幅","Osaka-Mono",monospace,serif;padding:10px 10px 13px 10px;margin:10px 0;-webkit-border-radius:3px;border-radius:3px}
 input[type="text"]{-webkit-box-shadow:0 0 1.3px .1px rgba(16,59,18,0.76);box-shadow:0 0 1.3px .1px rgba(16,59,18,0.76);border-style:none;max-width:90%;margin:5px auto}
-input[type="submit"]{-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:.1px .15px 2px .1px;box-shadow:.1px .15px 2px .1px;display:inline-block;color:#fefefe;padding:6px 10px 2px 10px;background-color:#27b9d4;font-weight:normal;letter-spacing:.09em;border-style:none;text-shadow:1px 1px 0 #6682ca}
+input[type="submit"]{-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:.1px .1px 2px .1px;box-shadow:.1px .1px 2px .1px;display:inline-block;color:#fefefe;padding:6px 10px 2px 10px;background-color:#27b9d4;font-weight:normal;letter-spacing:.09em;border-style:none;text-shadow:1px 1px 0 #6682ca}
 input::-webkit-input-placeholder{color:#c4d7da}
 input:-moz-placeholder{color:#c4d7da}
 input:placeholder{color:#c4d7da}
@@ -84,13 +84,13 @@ footer li{display:inline-block;list-style:none}
 .right{float:right}
 .clearer{clear:both}
 th,td{border:0 solid rgba(243,243,243,0.15)}
-table{margin:20px 0;border:0 solid rgba(243,243,243,0.15);border-right-color:rgba(189,236,255,0.4);border-spacing:1px;-webkit-box-shadow:.1px .15px 0 0;box-shadow:.1px .15px 0 0;}
+table{margin:20px 0;border:0 solid rgba(243,243,243,0.15);border-right-color:rgba(189,236,255,0.4);border-spacing:1px;-webkit-box-shadow:.1px .1px 0 0 #343434;box-shadow:.1px .1px 0 0 #343434;}
 table caption{text-align:center;font-size:1.7000000000000002px;font-size:1.7000000000000002rem;line-height:36px}
 table thead{color:#fff;letter-spacing:.25em;text-shadow:.5px .9px 0 #2d86cc;}
 table thead .row-odd{background-color:#52b5ce}
-table thead th{-webkit-box-shadow:.1px .15px 0 0;box-shadow:.1px .15px 0 0;border:2px solid rgba(243,243,243,0.2);text-align:center;font-weight:normal;font-size:1.7000000000000002px;font-size:1.7000000000000002rem}
+table thead th{-webkit-box-shadow:.1px .1px .5px 0 rgba(243,243,243,0.2);box-shadow:.1px .1px .5px 0 rgba(243,243,243,0.2);border:2px solid rgba(243,243,243,0.2);text-align:center;font-weight:normal;font-size:1.7000000000000002px;font-size:1.7000000000000002rem}
 table tr{height:41px}
-table td{-webkit-box-shadow:.1px .15px 1px 0;box-shadow:.1px .15px 1px 0;padding:0 5px}
+table td{-webkit-box-shadow:.1px .1px .5px 0 #343434;box-shadow:.1px .1px .5px 0 #343434;padding:0 5px}
 table .row-even{background-color:#f7f7f7}
 table .row-odd{background-color:#fefefe}
 .contents{border-left:ridge 23px #30cdd5;padding:10px 0}
