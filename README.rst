@@ -5,7 +5,7 @@ Sphinx hachibee theme
 Sample Page of HEAD revision
 =============================================
 
-`http://hachibeedi.github.io/Sphinx-hachibee-theme/index.html`_
+http://hachibeedi.github.io/Sphinx-hachibee-theme/index.html
 
 
 Characteristic
