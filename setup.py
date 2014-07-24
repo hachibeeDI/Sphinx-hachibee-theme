@@ -2,7 +2,7 @@ import os
 from setuptools import setup, find_packages
 
 DESCRIPTION = open(
-    os.path.join(os.path.dirname(__file__), 'README.md')).read().strip()
+    os.path.join(os.path.dirname(__file__), 'README.rst')).read().strip()
 
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -14,7 +14,7 @@ classifiers = [
 
 setup(
     name='hachibee-sphinx-theme',
-    version='0.2.3',
+    version='0.2.4',
     author='OGURA_Daiki',
     author_email='8hachibee125@gmail.com',
     url='https://github.com/hachibeeDI/Sphinx-hachibee-theme',
