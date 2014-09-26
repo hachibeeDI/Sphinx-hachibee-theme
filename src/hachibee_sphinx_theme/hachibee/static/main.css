@@ -126,8 +126,7 @@ footer li{display:inline-block;list-style:none}
 table{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-border-radius:3px;border-radius:3px;margin:20px 0;border:0 solid rgba(243,243,243,0.15);border-right-color:rgba(189,236,255,0.4);-webkit-box-shadow:.1px .1px 0 0 #343434;box-shadow:.1px .1px 0 0 #343434;}
 table caption{text-align:center;font-size:1.7000000000000002px;font-size:1.7000000000000002rem;line-height:36px}
 table thead{color:#fff;letter-spacing:.25em;text-shadow:.5px .9px 0 #2d86cc;}
-table thead .row-odd{background-color:#52b5ce}
-table thead th{border:2px solid rgba(243,243,243,0.2);text-align:center;font-weight:normal;font-size:1.7000000000000002px;font-size:1.7000000000000002rem;}
+table thead th{border:2px solid rgba(243,243,243,0.2);background-color:#52b5ce;text-align:center;font-weight:normal;font-size:1.7000000000000002px;font-size:1.7000000000000002rem;}
 table thead th:first-child{border-left:1px solid #52b5ce}
 table thead th:last-child{border-right:1px solid #52b5ce}
 table tr{height:41px}
